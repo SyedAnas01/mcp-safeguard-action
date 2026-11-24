@@ -74,7 +74,7 @@ The first badge is live: it shows whether your latest scan passed.
 | `format` | `sarif` | `sarif`, `json` or `text` |
 | `output` | `mcp-safeguard-results.sarif` | Report file path |
 | `upload-sarif` | `true` | Upload to Code Scanning when format is sarif |
-| `version` | latest | Pin a PyPI version of mcp-safeguard, e.g. `0.10.1` |
+| `version` | latest | Pin a PyPI version of mcp-safeguard, e.g. `0.10.2` |
 | `python-version` | `3.12` | Python used on the runner |
 | `continue-on-error` | `false` | Report findings without failing the job |
 
@@ -92,7 +92,7 @@ The same checks run locally before each commit:
 ```yaml
 repos:
   - repo: https://github.com/SyedAnas01/mcp-safeguard
-    rev: v0.10.1
+    rev: v0.10.2
     hooks:
       - id: mcp-safeguard          # MCP config files
       - id: mcp-safeguard-source   # MCP server source tree
